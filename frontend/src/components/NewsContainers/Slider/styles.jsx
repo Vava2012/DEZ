@@ -1,21 +1,21 @@
 import styled from "styled-components";
 
 export const BottomSliderContainer = styled.div`
-  width: 1200px;
-  max-width: 1200px;
+  width: 100%;
+
   height: 300px;
   position: relative;
-  
 
   /* Horizontal line above the container */
-  &::before {
-    content: "Actual";
+  /* &::before {
+    content: "";
     position: absolute;
     left: 0;
-    width: 100%;
-    height: 266px;
-    background-color: #ffffff;
-  }
+    width: 99%;
+    top: -22px;
+    height: 1px;
+    background-color: #a39999;
+  } */
 
   .slick-prev,
   .slick-next {
@@ -39,7 +39,7 @@ export const BottomSliderContainer = styled.div`
   }
 
   .slick-prev:before {
-    content: ''; // Clear the default arrow content
+    content: ""; // Clear the default arrow content
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -51,7 +51,7 @@ export const BottomSliderContainer = styled.div`
   }
 
   .slick-next:before {
-    content: ''; // Clear the default arrow content
+    content: ""; // Clear the default arrow content
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -70,8 +70,7 @@ export const Slide = styled.div`
   height: 100%;
   padding: 5px;
   cursor: pointer;
-  transition: transform 0.5s ease-in-out;   
-  
+  transition: transform 0.5s ease-in-out;
 `;
 
 export const SlideImage = styled.img`
