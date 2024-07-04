@@ -115,11 +115,10 @@ export const MainContainer = styled.main`
   }
 `;
 
-
-export const CategoryType = styled.div`
+export const CategoryHeading = styled.div`
   border-top: 1px solid #d0d0d0;
   padding: 10px 0;
   color: #005999;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 600;
 `;
