@@ -1,18 +1,14 @@
-import CardNews from "../../components/NewsContainers/CardNews/index.jsx";
-import BottomSlider from "../../components/NewsContainers/Slider/index.jsx";
+import BottomSlider from '../../components/NewsContainers/Slider/index.jsx';
+import CategoryNews from '../../components/NewsContainers/CategoryContainer/index.jsx';
+import { MainContainer } from '../../globalstyles/index.jsx';
 
-
-//ovo je za test
-
-const HelpForForeigners = () => {
-  return (
-    <div>
-      
-      <BottomSlider />
-      
-      
-    </div>
-  );
-};
-
-export default HelpForForeigners;
+function HelpForForeigners () {
+    return (
+      <MainContainer>
+        <CategoryNews />
+        <BottomSlider />
+      </MainContainer>
+    );
+  }
+  
+  export default HelpForForeigners;
