@@ -3,8 +3,8 @@ import
 { MainSection, Paragraph, 
 CategoryContainer, MainTop, MainMiddle, MainMiddleElement, 
 MainBottom, Aside, AsideSmallContainer,
-TextSection, ImageSection, CategoryType, CategoryModul } from './styles.jsx';
-import { Category } from '../../../globalstyles/index.jsx';
+TextSection, ImageSection, CategoryModul } from './styles.jsx';
+import { Category, CategoryHeading } from '../../../globalstyles/index.jsx';
 
 
 const CategoryNews = () => {
@@ -12,13 +12,13 @@ const CategoryNews = () => {
   return (
 <CategoryModul>
     
-        <CategoryType>Sport</CategoryType>
+        <CategoryHeading>Sport</CategoryHeading>
 
         <CategoryContainer>
             <MainSection>
                 <MainTop>
                     <TextSection>
-                    <h1 className="page-title">Roko Simic se vraca u Dinamo?</h1>
+                    <h2>Roko Simic se vraca u Dinamo?</h2>
                     <Category>HR | Sport</Category>
                     <Paragraph>DINAMO u ponedjeljak kreće s pripremama za novu sezonu. 
                         Sergej Jakirović će s momčadi prvih tjedan dana biti u Zagrebu, 

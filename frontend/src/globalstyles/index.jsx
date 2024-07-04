@@ -103,7 +103,9 @@ export const MainContainer = styled.main`
   min-height: 1000px;
   width: 80%;
   height: 80%;
-  padding: 20px;
+  gap: 20px;
+  margin-top: 120px;
+  
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: auto;
   
@@ -111,4 +113,12 @@ export const MainContainer = styled.main`
     width: 90%;
     height: 90%;
   }
+`;
+
+export const CategoryHeading = styled.div`
+  border-top: 1px solid #d0d0d0;
+  padding: 10px 0;
+  color: #005999;
+  font-size: 24px;
+  font-weight: 600;
 `;

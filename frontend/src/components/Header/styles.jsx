@@ -7,7 +7,7 @@ export const HeaderContainer = styled.header`
   padding: 10px 20px ;
   background: #ffffff;
   width: 80%;
-  height: 120px; 
+  height: 140px; 
   display: flex;
   flex-direction: column;
   align-items: center;
