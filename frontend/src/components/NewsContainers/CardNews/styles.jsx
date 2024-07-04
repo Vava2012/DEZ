@@ -10,7 +10,8 @@ export const NewsContainer = styled.div`
   width: 74%;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  
   @media (max-width: 768px) {
     width: 90%;
     height: 90%;

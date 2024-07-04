@@ -6,7 +6,9 @@ import
   SmallContainer, GlobalContainerFirst, CategoryContainer, 
   MainTop, MainMiddle, MainMiddleElement, MainBottom, Aside, AsideSmallContainer,
   TextSection, ImageSection } from './styles.jsx'
-  
+  import { BottomSliderContainer } from "../../components/NewsContainers/Slider/styles.jsx";
+import CardNews from "../../components/NewsContainers/CardNews/index.jsx";
+import BottomSlider from "../../components/NewsContainers/Slider/index.jsx";
 
 const HomeNews = () => {
 
@@ -72,11 +74,10 @@ const HomeNews = () => {
       <h3 className="page-title">Victory of the extreme right, a big defeat for Macron.</h3>
     </ImageTextSection>
   </SmallContainer>
-</SmallContainerFourArticlesHorizontal>
-
-
-        
+</SmallContainerFourArticlesHorizontal>        
     </Container>
+    <CardNews />
+    <BottomSlider />
     </MainContainer>
   
   )

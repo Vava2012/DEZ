@@ -1,15 +1,14 @@
 import { useState, useEffect } from "react"
-import { Category, MainContainer } from '../../../globalstyles/index.jsx'
 import 
 { MainSection, Paragraph, 
 CategoryContainer, MainTop, MainMiddle, MainMiddleElement, 
 MainBottom, Aside, AsideSmallContainer,
-TextSection, ImageSection, CategoryType } from './styles.jsx';
+TextSection, ImageSection, CategoryType, NewsCategory } from './styles.jsx';
 
 const NewsContainer = () => {
 
   return (
-<MainContainer>
+<NewsCategory>
     
         <CategoryType>Sport</CategoryType>
 
@@ -70,7 +69,7 @@ const NewsContainer = () => {
         </CategoryContainer>
 
     
-</MainContainer>
+</NewsCategory>
   )
 }
 

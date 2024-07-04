@@ -46,7 +46,7 @@ const BottomSlider = () => {
   };
 
   return (
-    <MainContainer>
+    
     <BottomSliderContainer>
       <Slider {...settings}>
         {dummyData.map((item) => (
@@ -57,7 +57,7 @@ const BottomSlider = () => {
         ))}
       </Slider>
     </BottomSliderContainer>
-    </MainContainer>
+    
   );
 };
 

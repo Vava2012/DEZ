@@ -1,6 +1,6 @@
 import React from 'react';
 import { NewsContainer, NewsItem, NewsTitle, NewsImage } from './styles.jsx';
-import { MainContainer } from '../../../globalstyles/index.jsx'
+
 
 const dummyArticles = [
   { title: 'Naslov malo duzi nego ostali da stane u dva reda iiiiiiiiiiiii', imageUrl: '/testslike/nvidia280x158.webp' },
@@ -12,7 +12,7 @@ const dummyArticles = [
 ];
 
 const CardNews = () => (
-  <MainContainer>
+  
   <NewsContainer>
     {dummyArticles.map((article, index) => (
       <NewsItem key={index}>
@@ -21,7 +21,8 @@ const CardNews = () => (
       </NewsItem>
     ))}
   </NewsContainer>
-  </MainContainer>
+  
+  
 );
 
 export default CardNews;

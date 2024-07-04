@@ -6,7 +6,7 @@ export const HeaderContainer = styled.header`
   max-width: 1200px;
   padding: 10px 20px ;
   background: #ffffff;
-  width: 100%;
+  width: 80%;
   height: 120px; 
   display: flex;
   flex-direction: column;

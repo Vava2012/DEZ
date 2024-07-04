@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+export const NewsCategory = styled.div`
+  
+`;
+
 export const MainSection = styled.div`
   flex: 74%;
   border-right: 1px solid #d0d0d0;
