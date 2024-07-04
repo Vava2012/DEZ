@@ -25,7 +25,7 @@ const NewsContainer = () => {
                     </Paragraph> 
                     </TextSection>
                     <ImageSection>
-                    <img src="/testslike/115x86.webp" alt="NHL" />
+                    <img src="/testslike/roko simic 580x393.webp" alt="NHL" />
                     </ImageSection>
                 </MainTop>
 
