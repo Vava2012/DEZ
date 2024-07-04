@@ -1,33 +1,23 @@
 import styled from 'styled-components';
 
 
-export const MainSection = styled.div`
-  flex: 74%;
-  border-right: 1px solid #d0d0d0;
-`;
-
-
-export const CategoryType = styled.div`
-  border-top: 1px solid #d0d0d0;
-  padding: 10px 0;
-  color: #005999;
-  font-size: 20px;
-  font-weight: 500;
-
-`;
-
 export const CategoryModul = styled.div`
   display: flex;
+  flex-direction: column;
   border-bottom: 1px solid #d0d0d0;
   padding: 20px 0;
-`;
-
-export const Paragraph = styled.p`
-  padding-right: 20px;
+  padding-left: 20px;
 `;
 
 export const CategoryContainer = styled.div`
+display: flex;
+flex-direction: row;
   padding-right: 20px;
+`;
+
+export const MainSection = styled.div`
+  flex: 74%;
+  border-right: 1px solid #d0d0d0;
 `;
 
 export const MainTop = styled.div`
@@ -41,12 +31,31 @@ max-width: 100%;
 `;
 
 export const TextSection = styled.div`
+flex: 35%;
 `;
 
 export const ImageSection = styled.div`
-display: flex;
-flex-direction: row;
+  flex: 65%; 
+  display: flex;
+  flex-direction: row;
+  img {
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+  }
 `;
+
+
+
+export const Paragraph = styled.p`
+  padding-right: 20px;
+`;
+
+
+
+
+
+
 
 
 export const MainMiddle = styled.div`

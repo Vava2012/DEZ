@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const BottomSliderContainer = styled.div`
-  width: 1112px;
-  height: 266px;
+  width: 1200px;
+  max-width: 1200px;
+  height: 300px;
   position: relative;
   
 
@@ -11,10 +12,9 @@ export const BottomSliderContainer = styled.div`
     content: "Actual";
     position: absolute;
     left: 0;
-    top: -22px;
     width: 100%;
-    height: 1px;
-    background-color: #000000;
+    height: 266px;
+    background-color: #ffffff;
   }
 
   .slick-prev,
@@ -76,7 +76,7 @@ export const Slide = styled.div`
 
 export const SlideImage = styled.img`
   max-width: 100%;
-  max-height: 100%;
+  height: 200px;
   object-fit: cover;
 `;
 
