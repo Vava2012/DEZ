@@ -1,15 +1,29 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { BottomSliderContainer, Slide, SlideImage, SlideTitle } from "./styles.jsx";
-
+import {
+  BottomSliderContainer,
+  Slide,
+  SlideImage,
+  SlideTitle,
+} from "./styles.jsx";
+import { Category, CategoryHeading } from "../../../globalstyles/index.jsx";
 
 const BottomSlider = () => {
   const dummyData = [
-    { id: 1, title: "ovo je test da vidimo kako radi na duzim recenicama", urlToImage: "/testslike/nvidia280x158.webp" },
+    {
+      id: 1,
+      title: "ovo je test da vidimo kako radi na duzim recenicama",
+      urlToImage: "/testslike/nvidia280x158.webp",
+    },
     { id: 2, title: "Slide 2", urlToImage: "/testslike/nvidia280x158.webp" },
     { id: 3, title: "Slide 3", urlToImage: "/testslike/nvidia280x158.webp" },
-    { id: 4, title: "idemo jako dugo napravit naslov da vidimo kako je kad je stvarno veliki naslov u pitanju test test test  test text ", urlToImage: "/testslike/druga slika.webp" },
+    {
+      id: 4,
+      title:
+        "idemo jako dugo napravit naslov da vidimo kako je kad je stvarno veliki naslov u pitanju test test test  test text ",
+      urlToImage: "/testslike/druga slika.webp",
+    },
     { id: 5, title: "Slide 5", urlToImage: "/testslike/france100px.webp" },
     { id: 6, title: "Slide 6", urlToImage: "/testslike/nvidia280x158.webp" },
     { id: 7, title: "Slide 7", urlToImage: "/testslike/nvidia280x158.webp" },
@@ -36,7 +50,7 @@ const BottomSlider = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
         },
       },
       {
@@ -49,8 +63,9 @@ const BottomSlider = () => {
   };
 
   return (
-    
     <BottomSliderContainer>
+      <CategoryHeading />
+      <Category>HR | Sport</Category>
       <Slider {...settings}>
         {dummyData.map((item) => (
           <Slide key={item.id}>
@@ -60,7 +75,6 @@ const BottomSlider = () => {
         ))}
       </Slider>
     </BottomSliderContainer>
-    
   );
 };
 
