@@ -87,21 +87,6 @@ export const GlobalStyle = createGlobalStyle`
   .logo {
     font-family: var(--logo-font);
   }
-
-  button {
-    font-family: var(--text-font);
-    color: #ffffff;
-    background-color: var(--button-color);
-    border: none;
-    border-radius: 3px;
-    padding: 8px 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-
-    &:hover {
-      background-color: #0078bf;
-    }
-  }
 `;
 
 export const Category = styled.div`

@@ -1,12 +1,12 @@
 import React from 'react';
 import MapComponent from '../../components/MapBox/Map/Map';
-import { MapContainer } from './styles.jsx'; 
+import { MapPageContainer } from './styles.jsx'; 
 
 const Map = () => {
   return (
-    <MapContainer> 
+    <MapPageContainer> 
       <MapComponent />
-    </MapContainer>
+    </MapPageContainer>
   );
 };
 

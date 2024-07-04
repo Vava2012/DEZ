@@ -1,13 +1,20 @@
 import { useState, useEffect } from "react"
-import { Category } from '../../globalstyles/index.jsx';
-import { Container, FirstSectionLeft, FirstSectionRight, Pagesectionmain, ImageTextSection, Paragraph, SmallContainerFourArticlesHorizontal, SmallContainer, GlobalContainerFirst } from './styles.jsx';
+import { Category, MainContainer } from '../../globalstyles/index.jsx';
+import 
+{ Container, MainSection, GlobalAside, Pagesectionmain, 
+  ImageTextSection, Paragraph, SmallContainerFourArticlesHorizontal, 
+  SmallContainer, GlobalContainerFirst, CategoryContainer, 
+  MainTop, MainMiddle, MainMiddleElement, MainBottom, Aside, AsideSmallContainer,
+  TextSection, ImageSection } from './styles.jsx'
+  
 
 const HomeNews = () => {
 
   return (
+    <MainContainer>
     <Container>
       <GlobalContainerFirst>
-        <FirstSectionLeft>
+        <MainSection>
         <Pagesectionmain>
         <h1 className="page-title">Roko Simic se vraca u Dinamo?</h1>
         <Category>HR | Sport</Category>
@@ -19,9 +26,9 @@ const HomeNews = () => {
           </Paragraph> 
           </ImageTextSection>
         </Pagesectionmain> 
-      </FirstSectionLeft>
+      </MainSection>
 
-      <FirstSectionRight>
+      <GlobalAside>
       <Pagesectionmain className="first">
           <ImageTextSection>
           <img src="/testslike/nvidia280x158.webp" alt="Nvidia" />
@@ -36,8 +43,9 @@ const HomeNews = () => {
           <h2 className="page-title">Nvidia graphic card</h2>
         <Category>NEWS |</Category>
         </Pagesectionmain>
-      </FirstSectionRight>
+      </GlobalAside>
       </GlobalContainerFirst>
+
 
       <SmallContainerFourArticlesHorizontal>
   <SmallContainer>
@@ -66,9 +74,10 @@ const HomeNews = () => {
   </SmallContainer>
 </SmallContainerFourArticlesHorizontal>
 
+
         
-      
     </Container>
+    </MainContainer>
   
   )
 }
