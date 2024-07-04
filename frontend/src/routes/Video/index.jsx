@@ -1,12 +1,14 @@
-import NewsContainer from '../../components/NewsContainers/CategoryContainer/index.jsx';
+import BottomSlider from '../../components/NewsContainers/Slider/index.jsx';
+import { Category, MainContainer } from '../../globalstyles/index.jsx' ;
 
-function Video() {
+function Video () {
     return (
-      <div>
-        <NewsContainer />
-      </div>
+      <MainContainer>
+        
+        <BottomSlider />
+      </MainContainer>
     );
   }
   
   export default Video;
-  
+

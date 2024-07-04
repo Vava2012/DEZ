@@ -3,12 +3,14 @@ import
 { MainSection, Paragraph, 
 CategoryContainer, MainTop, MainMiddle, MainMiddleElement, 
 MainBottom, Aside, AsideSmallContainer,
-TextSection, ImageSection, CategoryType, NewsCategory } from './styles.jsx';
+TextSection, ImageSection, CategoryType, CategoryModul } from './styles.jsx';
+import { Category } from '../../../globalstyles/index.jsx';
 
-const NewsContainer = () => {
+
+const CategoryNews = () => {
 
   return (
-<NewsCategory>
+<CategoryModul>
     
         <CategoryType>Sport</CategoryType>
 
@@ -69,8 +71,8 @@ const NewsContainer = () => {
         </CategoryContainer>
 
     
-</NewsCategory>
+</CategoryModul>
   )
 }
 
-export default NewsContainer
+export default CategoryNews;
