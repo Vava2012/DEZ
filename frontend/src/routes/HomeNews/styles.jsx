@@ -13,7 +13,7 @@ export const GlobalContainerFirst = styled.div`
 `;
 
 export const FirstSectionLeft = styled.div`
-  flex: 74%;
+  flex: 76%;
   border-right: 1px solid #d0d0d0;
 `;
 
