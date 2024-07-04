@@ -25,9 +25,6 @@ export const Paragraph = styled.p`
 `;
 
 
-
-
-
 export const MainTop = styled.div`
 display: flex;
 flex-direction: row;
