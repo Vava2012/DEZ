@@ -1,66 +1,14 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-export const GlobalContainerFirst = styled.div`
-  display: flex;
-  border: solid #d0d0d0;
-  border-width: 1px 0;
-  padding: 20px 0;
-`;
-
 export const MainSection = styled.div`
   flex: 74%;
   border-right: 1px solid #d0d0d0;
 `;
 
-export const GlobalAside = styled.div`
-  flex: 26%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-
-  & > .first {
-    border-bottom: 1px solid #d0d0d0; 
-    padding-bottom: 20px;
-  }
-`;
-
-export const Pagesectionmain = styled.div`
-  margin: 0px;
-`;
-
-export const ImageTextSection = styled.div`
-  margin-top: 10px;
-  display: flex;
-  align-items: top;
-  gap: 20px; 
-`;
 
 export const Paragraph = styled.p`
   padding-right: 20px;
 `;
-
-export const SmallContainerFourArticlesHorizontal = styled.div`
-  display: flex;
-  padding-top: 20px;
-  padding-bottom: 20px; 
-`;
-
-export const SmallContainer = styled.div`
-  display: flex;
-  gap: 20px; 
-  padding: 10px;
-  border-left: 1px solid #d0d0d0;
-  &:first-child {
-    border-left: none; 
-  }
-`;
-
 
 
 export const CategoryContainer = styled.div`
@@ -93,6 +41,8 @@ flex-direction: row;
 export const MainMiddle = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   position: relative;
   padding: 20px 20px 20px 20px;
   gap: 20px;
@@ -117,16 +67,16 @@ export const MainMiddle = styled.div`
   }
 `;
 
-
-
-
 export const MainMiddleElement = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   gap: 20px; 
-  padding: 10px;
+  padding-left: 20px;
   border-left: 1px solid #d0d0d0;
+  margin: 0 auto; 
   &:first-child {
     border-left: none; 
   }
@@ -136,41 +86,53 @@ export const MainMiddleElement = styled.div`
 
 export const MainBottom = styled.div`
   display: flex;
+  justify-content: flex-end; 
+  align-items: top; 
   padding-top: 20px;
-  padding-bottom: 20px;
-  gap: 20px;
   
-
-
-  h3:not(:last-child) {
+  h3 {
+    flex: 1; 
+    text-align: center; 
     border-right: 1px solid #d0d0d0;
+    padding: 0 10px;
+  }
+
+  h3:last-child {
+    border-right: none; 
   }
 `;
+
+
 
 export const Aside = styled.div`
   flex: 26%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: top;
+  text-align: center; 
   align-items: center;
-
-  & > .first {
-    border-bottom: 1px solid #d0d0d0; 
-    padding-bottom: 20px;
-  }
 `;
-
 
 export const AsideSmallContainer = styled.div`
-display: flex;
-flex-direction: column;
-  padding-bottom: 20px;
-  gap: 20px;
-  border-bottom: 1px solid #d0d0d0;
-  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; 
 
-  h3:not(:last-child) {
+  &:not(:last-child) {
     border-bottom: 1px solid #d0d0d0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
+
+  img {
+    max-width: 100%; 
+  }
+
+  margin-left: 20px;
 `;
+
+
+
+
 

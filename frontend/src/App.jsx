@@ -1,17 +1,12 @@
-import { GlobalStyle, MainContainer } from './globalstyles';
+// App.jsx
+import { GlobalStyle } from './globalstyles';
 import Router from './routes';
-import Footer from './components/Footer';
-
-
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <MainContainer>
-        <Router />
-      </MainContainer>
-      <Footer />
+      <Router />
     </>
   );
 }
