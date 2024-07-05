@@ -1,11 +1,10 @@
-import BottomSlider from '../../components/NewsContainers/Slider/index.jsx';
+import SmallContainerFourArticles from '../../components/NewsContainers/SmallContainerFourArticlesHorizontal/index.jsx';
 import { Category, MainContainer } from '../../globalstyles/index.jsx' ;
 
 function Video () {
     return (
       <MainContainer>
-        
-        <BottomSlider />
+        <SmallContainerFourArticles />
       </MainContainer>
     );
   }

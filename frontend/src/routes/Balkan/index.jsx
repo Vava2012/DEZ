@@ -1,11 +1,11 @@
-import CardNews from '../../components/NewsContainers/CardNews/index.jsx';
+import CategoryNews from '../../components/NewsContainers/CategoryContainer/index.jsx';
 import BottomSlider from '../../components/NewsContainers/Slider/index.jsx';
-import { Category, MainContainer } from '../../globalstyles/index.jsx' ;
+import { MainContainer } from '../../globalstyles/index.jsx' ;
 
 function Balkan () {
     return (
       <MainContainer>
-        <CardNews />
+        <CategoryNews />
         <BottomSlider />
       </MainContainer>
     );
