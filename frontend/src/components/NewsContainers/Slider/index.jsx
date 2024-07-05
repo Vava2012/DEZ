@@ -6,8 +6,9 @@ import {
   Slide,
   SlideImage,
   SlideTitle,
+  CategoryHeading,
 } from "./styles.jsx";
-import { Category, CategoryHeading } from "../../../globalstyles/index.jsx";
+
 
 const BottomSlider = () => {
   const dummyData = [
@@ -64,8 +65,8 @@ const BottomSlider = () => {
 
   return (
     <BottomSliderContainer>
-      <CategoryHeading />
-      <Category>HR | Sport</Category>
+      
+      <CategoryHeading>Sport</CategoryHeading>
       <Slider {...settings}>
         {dummyData.map((item) => (
           <Slide key={item.id}>

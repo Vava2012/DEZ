@@ -6,7 +6,7 @@ function HelpForForeigners () {
     return (
       <MainContainer>
         <CategoryNews />
-        
+        <BottomSlider />
         <CategoryNews />
       </MainContainer>
     );
