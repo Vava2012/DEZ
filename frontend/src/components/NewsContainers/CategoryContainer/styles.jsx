@@ -4,8 +4,8 @@ import styled from 'styled-components';
 export const CategoryModul = styled.div`
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #d0d0d0;
-  padding: 20px 20px 0px 20px;
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 20px;
   
 `;
 
@@ -14,11 +14,13 @@ display: flex;
 flex-direction: row;
 padding: 10px 10px 0px 0px;
 border-top: 1px solid #d0d0d0;
+border-bottom: 1px solid #d0d0d0;
 `;
 
 export const MainSection = styled.div`
   flex: 74%;
   border-right: 1px solid #d0d0d0;
+  margin-bottom: 10px;
 `;
 
 export const MainTop = styled.div`

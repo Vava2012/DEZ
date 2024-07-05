@@ -10,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: normal;
     font-style: normal;
   }
-  
+
 
   :root {
     --logo-font: 'Chomsky', serif;
@@ -104,7 +104,8 @@ export const MainContainer = styled.main`
   width: 80%;
   height: 80%;
   gap: 20px;
-  margin-top: 120px;
+  margin-top: 140px;
+  padding-bottom: 50px;
   
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: auto;
@@ -122,3 +123,4 @@ export const CategoryHeading = styled.div`
   font-size: 24px;
   font-weight: 600;
 `;
+
