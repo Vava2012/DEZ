@@ -1,78 +1,108 @@
-import { useState, useEffect } from "react"
-import 
-{ MainSection, Paragraph, 
-CategoryContainer, MainTop, MainMiddle, MainMiddleElement, 
-MainBottom, Aside, AsideSmallContainer,
-TextSection, ImageSection, CategoryModul } from './styles.jsx';
-import { Category, CategoryHeading } from '../../../globalstyles/index.jsx';
+import { useState, useEffect } from "react";
+import {
+  MainSection,
+  Paragraph,
+  CategoryContainer,
+  MainTop,
+  MainMiddle,
+  MainMiddleElement,
+  Aside,
+  AsideSmallContainer,
+  TextSection,
+  ImageSection,
+  CategoryModul,
+} from "./styles.jsx";
+import { Category, CategoryHeading } from "../../../globalstyles/index.jsx";
 
+const dummyDataTop = [
+  {
+    id: 1,
+    title: "A record holding year",
+    image: "/testslike/santiago.webp",
+    category: "HR | Sport",
+    paragraph:
+      "DINAMO u ponedjeljak kreće s pripremama za novu sezonu. Sergej Jakirović će s momčadi prvih tjedan dana biti u Zagrebu, dok se svi ne skupe nakon Eura, a nakon toga će je povesti u Austriju.",
+  },
+];
+
+const dummyDataMiddle = [
+  {
+    id: 2,
+    title: "The Disruptors: The Mattel miracle maker, the modern Babe Ruth, the street vendor avenger.",
+    image: "/testslike/115x86.webp",
+  },
+  {
+    id: 3,
+    title: "The Disruptors: The Mattel miracle maker.",
+    image: "/testslike/druga slika.webp",
+  },
+  {
+    id: 4,
+    title: "The Star: Guess who is back?",
+    image: "/testslike/roko simic 580x393.webp",
+  },
+];
+
+const dummyDataAside = [
+  { id: 9, title: "Jamie Vardy is still a world class striker" },
+  { id: 10, title: "Olympic games are knocking on the doors" },
+  { id: 12, title: "When will Novak Djokovic come back?" },
+  { id: 13, title: "Diego Simeone is on fire!" },
+  { id: 14, title: "And the Golden ball goest to..." },
+
+];
 
 const CategoryNews = () => {
+  const [newsTop, setNewsTop] = useState([]);
+  const [newsMiddle, setNewsMiddle] = useState([]);
+  const [newsAside, setNewsAside] = useState([]);
+
+  useEffect(() => {
+    setNewsTop(dummyDataTop);
+    setNewsMiddle(dummyDataMiddle);
+    setNewsAside(dummyDataAside);
+  }, []);
 
   return (
-<CategoryModul>
-    
-        <CategoryHeading>Sport</CategoryHeading>
+    <CategoryModul>
+      <CategoryHeading>Sport</CategoryHeading>
+      <CategoryContainer>
+        <MainSection>
+          <MainTop>
+            {newsTop.map((item) => (
+              <>
+                <TextSection key={item.id}>
+                  <h3>{item.title}</h3>
+                  <Category>{item.category}</Category>
+                  <Paragraph>{item.paragraph}</Paragraph>
+                </TextSection>
+                <ImageSection>
+                  <img src={item.image} alt="NHL" />
+                </ImageSection>
+              </>
+            ))}
+          </MainTop>
 
-        <CategoryContainer>
-            <MainSection>
-                <MainTop>
-                    <TextSection>
-                    <h2>Roko Simic se vraca u Dinamo?</h2>
-                    <Category>HR | Sport</Category>
-                    <Paragraph>DINAMO u ponedjeljak kreće s pripremama za novu sezonu. 
-                        Sergej Jakirović će s momčadi prvih tjedan dana biti u Zagrebu, 
-                        dok se svi ne skupe nakon Eura, a nakon toga će je povesti u Austriju.
-                    </Paragraph> 
-                    </TextSection>
-                    <ImageSection>
-                    <img src="/testslike/roko simic 580x393.webp" alt="NHL" />
-                    </ImageSection>
-                </MainTop>
+          <MainMiddle>
+            {newsMiddle.map((item) => (
+              <MainMiddleElement key={item.id}>
+                <img src={item.image} alt="France" />
+                <h3>{item.title}</h3>
+              </MainMiddleElement>
+            ))}
+          </MainMiddle>
+        </MainSection>
 
-                <MainMiddle>
-                    <MainMiddleElement>
-                        <img src="/testslike/115x86.webp" alt="France" />
-                        <h3 className="page-title">The Disruptors: The Mattel miracle maker, the modern Babe Ruth, the street vendor avenger.</h3>
-                    </MainMiddleElement>
-                    <MainMiddleElement>
-                        <img src="/testslike/115x86.webp" alt="France" />
-                        <h3 className="page-title">The Disruptors: The Mattel miracle maker, the modern Babe Ruth, the street vendor avenger.</h3>
-                    </MainMiddleElement>
-                    <MainMiddleElement>
-                        <img src="/testslike/115x86.webp" alt="France" />
-                        <h3 className="page-title">The Disruptors: The Mattel miracle maker, the modern Babe Ruth, the street vendor avenger.</h3>
-                    </MainMiddleElement>
-                </MainMiddle>
-
-                <MainBottom>
-                    <h3>The.</h3>
-                    <h3>The Disruptors: The Mattel miracle maker, the modern Babe Ruth, the street vendor avenger.</h3>
-                    <h3>The Disruptors: The Mattel miracle maker.</h3>
-                    <h3>The Disruptors: </h3>
-                </MainBottom>
-
-            </MainSection>
-
-            <Aside>
-                <AsideSmallContainer>
-                    <img src="/testslike/115x86.webp" alt="NHL" />
-                    <h3 className="page-title">The Disruptors: The Mattel miracle maker, the modern Babe Ruth, the street vendor avenger.</h3>
-                </AsideSmallContainer>
-                <AsideSmallContainer>
-                    <img src="/testslike/115x86.webp" alt="NHL" />
-                    <h3 className="page-title">The Disruptors: The Mattel miracle maker, the modern Babe Ruth, the street vendor avenger.</h3>
-                </AsideSmallContainer>
-                <AsideSmallContainer>
-                    <img src="/testslike/115x86.webp" alt="NHL" />
-                    <h3 className="page-title">The Disruptors: The Mattel miracle maker, the modern Babe Ruth, the street vendor avenger.</h3>
-                </AsideSmallContainer>
-            </Aside>
-        </CategoryContainer>
-
-    
-</CategoryModul>
-  )
-}
+        <Aside>
+          {newsAside.map((item) => (
+            <AsideSmallContainer key={item.id}>
+              <h3>{item.title}</h3>
+            </AsideSmallContainer>
+          ))}
+        </Aside>
+      </CategoryContainer>
+    </CategoryModul>
+  );
+};
 
 export default CategoryNews;
