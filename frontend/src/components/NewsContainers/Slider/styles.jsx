@@ -1,26 +1,18 @@
 import styled from "styled-components";
+import { CategoryHeading as GlobalCategoryHeading } from "../../../globalstyles/index.jsx";
+
+
 
 export const BottomSliderContainer = styled.div`
   width: 100%;
-
+  margin-bottom: 20px;
   height: 300px;
   position: relative;
-
-  /* Horizontal line above the container */
-  /* &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 99%;
-    top: -22px;
-    height: 1px;
-    background-color: #a39999;
-  } */
 
   .slick-prev,
   .slick-next {
     display: block;
-    background: white; // White background for arrows
+    background: white;
     width: 30px;
     height: 50px;
     z-index: 2;
@@ -39,7 +31,7 @@ export const BottomSliderContainer = styled.div`
   }
 
   .slick-prev:before {
-    content: ""; // Clear the default arrow content
+    content: ""; 
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -51,7 +43,7 @@ export const BottomSliderContainer = styled.div`
   }
 
   .slick-next:before {
-    content: ""; // Clear the default arrow content
+    content: "";
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -82,13 +74,17 @@ export const SlideImage = styled.img`
 export const SlideTitle = styled.h3`
   color: #000000;
   text-align: center;
-  overflow: hidden; /* Hide overflow */
+  overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 3; /* Limit to two lines */
-  -webkit-box-orient: vertical; /* Ensure vertical orientation */
-  max-height: 5em; /* Approximately two lines of text */
-  text-overflow: ellipsis; /* Show ellipsis for overflow */
-  margin: 0; /* Remove default margin */
-  line-height: 1.8em; /* Adjust line-height as needed */
-  height: 5em;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; 
+  max-height: 3.8em; 
+  text-overflow: ellipsis; 
+  margin: 0; 
+  line-height: 1.8em;
+  height: 3.8em;
+`;
+
+export const CategoryHeading = styled(GlobalCategoryHeading)`
+  margin-left: 20px;
 `;

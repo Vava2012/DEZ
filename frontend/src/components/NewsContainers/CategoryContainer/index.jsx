@@ -52,20 +52,24 @@ const dummyDataAside = [
 
 ];
 
+const dummyCategory = "Sport Highlights";
+
 const CategoryNews = () => {
   const [newsTop, setNewsTop] = useState([]);
   const [newsMiddle, setNewsMiddle] = useState([]);
   const [newsAside, setNewsAside] = useState([]);
+  const [category, setCategory] = useState("");
 
   useEffect(() => {
     setNewsTop(dummyDataTop);
     setNewsMiddle(dummyDataMiddle);
     setNewsAside(dummyDataAside);
+    setCategory(dummyCategory);
   }, []);
 
   return (
     <CategoryModul>
-      <CategoryHeading>Sport</CategoryHeading>
+      <CategoryHeading>{category}</CategoryHeading>
       <CategoryContainer>
         <MainSection>
           <MainTop>
